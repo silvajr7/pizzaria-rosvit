@@ -23,7 +23,7 @@ body {
 }
 
 .hero-header__container {
-    /* background-color: blueviolet; */
+    background-color: blueviolet;
     padding: 186px 30px 50px;
     width: 100%;
     max-width: 882px;
