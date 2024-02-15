@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Bebas+Neue&display=swap');
+
+body {
+    background-color: var(--gray);
+}
+
+/* .teste-video {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    background-size: cover;
+    overflow: hidden;
+    z-index: -1;
+} */
+.hero-header {
+    /* background: linear-gradient (0deg, #12120d, #12120d), #070606; */
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-header__container {
+    /* background-color: blueviolet; */
+    padding: 186px 30px 50px;
+    width: 100%;
+    max-width: 882px;
+    LO font-family: 'Archivo Black', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    /* z-index: 1; */
+}
+
+.hero-header span {
+    color: var(--primary);
+}
+
+.hero-header h1 {
+    font-size: 80px;
+    line-height: 70px;
+}
+
+.hero-header p,
+.hero-header h1 {
+    color: var(--white);
+    text-align: left;
+}
+
+.hero-header img {
+    width: 100%;
+    min-width: 300px;
+    max-width: 1180px;
+    /* position: absolute;
+    right: 0; */
+    /* z-index: -1; */
+    /* background-color: aqua; */
+}
+
+.footer .button--primary {
+    padding: 16px 36px;
+    text-transform: uppercase;
+}
+
+.button {
+    width: fit-content;
+    border: 0;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+    padding: 38px 0 98px;
+    /* background-color: blue;
+    color: white; */
+}
+
+.section__title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 64px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.section__subtitle {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 35px;
+    margin-top: 12px;
+    font-family: 'Anton', sans-serif;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, .25);
+
+}
+
+.section__subtitle span {
+    font-weight: 700;
+}
+
+.menu__cards {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    /* grid-template-columns: repeat(2, minmax(auto, 900px)); */
+    gap: 48px 30px;
+    /* background-color: aqua; */
+    padding: 48px 30px;
+}
+
+.menu__cards .card {
+    min-width: 200px;
+    max-width: 900px;
+    flex-basis: 40%;
+    flex-grow: 1;
+}
+
+.card {
+    text-transform: uppercase;
+    background: #333;
+    background-size: cover;
+    border-radius: 60px;
+    width: 100%;
+    padding: 40px 20px;
+
+}
+
+.card:nth-child(1) {
+    background-image: url(../images/menu/pizza-1.jpg);
+    background-size: cover;
+
+}
+
+.card:nth-child(2) {
+    background-image: url(../images/menu/pizza-2.jpg);
+    background-size: cover;
+}
+
+.card:nth-child(3) {
+    background-image: url(../images/menu/pizza-3.jpg);
+    background-size: cover;
+}
+
+.card:nth-child(4) {
+    background-image: url(../images/menu/pizza-1.jpg);
+    background-size: cover;
+}
+
+
+.card__title {
+    color: var(--primary);
+
+}
+
+.card__title,
+.card__price {
+
+    font-size: 45px;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.card__title,
+.card__ingredients,
+.card__price {
+    margin-left: auto;
+    /* margin-right: 15px; */
+    width: fit-content;
+}
+
+.card__ingredients {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    /* background-color: #f0f; */
+    background-color: rgba(0, 0, 0, .15);
+    border-radius: 20px;
+    text-align: right;
+    margin-top: 8px;
+}
+
+.card__ingredients,
+.card__price {
+    color: var(--white);
+}
+
+.card__price {
+    background-color: var(--primary);
+    line-height: 50px;
+    border-radius: 17px;
+    margin-top: 28px;
+    padding: 4px 12px;
+}
+
+.card__price a {
+    text-decoration: none;
+    color: white;
+}
+
+.card__price:hover {
+    background-color: black;
+    color: white;
+}
+
+.menu__drinks {
+    border: 5px solid black;
+    border-radius: 44px;
+    padding: 44px 64px;
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.drinks__title {
+    color: var(--primary);
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+}
+
+.drinks__item,
+.drinks__title {
+    text-transform: uppercase;
+
+}
+
+.drinks__container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    /* padding: 20px 40px; */
+}
+
+
+.drinks__product .drinks__item:nth-child(2),
+.drinks__product .drinks__item:nth-child(5),
+.drinks__product .drinks__item:nth-child(8),
+.drinks__price .drinks__item:nth-child(2),
+.drinks__price .drinks__item:nth-child(5),
+.drinks__price .drinks__item:nth-child(8) {
+    /* color: #f0f; */
+    margin-top: 24px;
+}
+
+
+
+.drinks__product,
+.drinks__price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.drinks__item {
+    font-size: 36px;
+    line-height: 40px;
+    font-family: 'Anton', sans-serif;
+    line-height: 1.5;
+}
+
+.location {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    color: var(--white);
+    padding: 64px 0 120px;
+}
+
+.location .section__title,
+.location .section__subtitle {
+    color: var(--white);
+}
+
+.location__address {
+    font-size: 20px;
+    line-height: 36px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+@media (max-width:1023px) {
+    .menu {
+        gap: 0;
+    }
+
+    .menu__cards {
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    .card__price,
+    .card__title {
+        text-align: center;
+    }
+
+    .section__title {
+        font-size: 80px;
+    }
+
+    .section__subtitle {
+        font-size: 35px;
+        padding: 5px;
+    }
+
+    .menu__drinks {
+        padding: 20px;
+    }
+
+    .drinks__title {
+        font-size: 40px;
+        padding: 5px 50px;
+    }
+
+    .drinks__item {
+        font-size: 20px;
+        line-height: 40px;
+        /* padding: 10px; */
+    }
+
+    .location {
+        padding: 20px 0;
+    }
+
+    .location .section__title {
+        font-size: 65px;
+
+    }
+
+    .location .section__subtitle {
+        font-size: 27px;
+
+    }
+
+    .location__address {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .location iframe {
+        width: 100%;
+        max-width: calc(100%-20px);
+
+    }
+
+    /* .teste-video {
+        width: 100%;
+        height: 1000px;
+        background-color: blue;
+        display: flex;
+        background-size: cover;
+        justify-content: center;
+    } */
+}
