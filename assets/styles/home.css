@@ -23,7 +23,7 @@ body {
 }
 
 .hero-header__container {
-    background-color: blueviolet;
+    /* background-color: #f0f; */
     padding: 186px 30px 50px;
     width: 100%;
     max-width: 882px;
@@ -59,15 +59,21 @@ body {
     /* background-color: aqua; */
 }
 
-.footer .button--primary {
-    padding: 16px 36px;
-    text-transform: uppercase;
-}
-
 .button {
     width: fit-content;
+    font-family: 'Archivo Black', sans-serif;
     border: 0;
+    background-color: var(--primary);
+    padding: 16px 36px;
+    text-transform: uppercase;
+    border-radius: 15px;
 }
+
+.hero-header .button--primary {}
+
+
+
+
 
 .menu {
     display: flex;
@@ -76,8 +82,6 @@ body {
     width: 100%;
     gap: 40px;
     padding: 38px 0 98px;
-    /* background-color: blue;
-    color: white; */
 }
 
 .section__title {
@@ -107,9 +111,7 @@ body {
     width: 100%;
     flex-wrap: wrap;
     align-items: center;
-    /* grid-template-columns: repeat(2, minmax(auto, 900px)); */
     gap: 48px 30px;
-    /* background-color: aqua; */
     padding: 48px 30px;
 }
 
@@ -168,7 +170,6 @@ body {
 .card__ingredients,
 .card__price {
     margin-left: auto;
-    /* margin-right: 15px; */
     width: fit-content;
 }
 
@@ -176,7 +177,6 @@ body {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 30px;
     line-height: 36px;
-    /* background-color: #f0f; */
     background-color: rgba(0, 0, 0, .15);
     border-radius: 20px;
     text-align: right;
@@ -236,7 +236,6 @@ body {
     justify-content: space-between;
     width: 100%;
     position: relative;
-    /* padding: 20px 40px; */
 }
 
 
@@ -246,7 +245,6 @@ body {
 .drinks__price .drinks__item:nth-child(2),
 .drinks__price .drinks__item:nth-child(5),
 .drinks__price .drinks__item:nth-child(8) {
-    /* color: #f0f; */
     margin-top: 24px;
 }
 
@@ -273,13 +271,15 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background-color: black;
+    background-color: var(--gray2);
     color: var(--white);
     padding: 64px 0 120px;
 }
 
 .location .section__title,
-.location .section__subtitle {
+.location .section__subtitle,
+.footer .section__title,
+.footer .section__subtitle {
     color: var(--white);
 }
 
@@ -287,6 +287,49 @@ body {
     font-size: 20px;
     line-height: 36px;
     font-family: 'Bebas Neue', sans-serif;
+}
+
+.location iframe {
+    border-radius: 50px;
+
+}
+
+.footer {
+    background-color: var(--black);
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: calc(100% - 40px);
+    max-width: 1460px;
+    margin: 0 auto;
+    gap: 32px;
+    padding-top: 32px;
+    /* background-color: #f0f; */
+
+}
+
+.footer .section__title,
+.footer .section__subtitle {
+    text-align: left;
+}
+
+.footer .section__title span {
+    color: var(--primary);
+}
+
+
+.footer .button--primary a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.footer .button--primary a:hover {
+    color: var(--white);
+    padding: 20px 45px;
+    font-size: 17px;
 }
 
 @media (max-width:1023px) {
@@ -350,6 +393,18 @@ body {
     .location iframe {
         width: 100%;
         max-width: calc(100%-20px);
+        border-radius: 30px;
+    }
+
+    .footer__container {
+        flex-direction: column;
+        gap: 32px;
+        padding: 0px 16px 20px;
+    }
+
+    .footer .button--primary {
+        padding: 20px 45px;
+        font-size: 17px;
 
     }
 
