@@ -1,3 +1,4 @@
+`
 <!DOCTYPE html>
 <html lang="pt_br">
 
@@ -5,9 +6,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizzaria Rosvit</title>
+
     <link rel="stylesheet" href="./assets/styles/global.css">
     <link rel="stylesheet" href="./assets/styles/reset.css">
+
     <link rel="stylesheet" href="./assets/styles/home.css">
+    <link rel="stylesheet" href="./assets/styles/navbar.css">
 </head>
 
 <body>
@@ -15,7 +19,18 @@
         <video src="./video-back.mp4" class="video-bg" autoplay muted loop>
         </video>
     </div> -->
-    <nav>
+    <nav class="navbar">
+        <div class="navbar__brand">
+            <img class="navbar__logo" src="./assets/images/logo/Pizza-logo.png" alt="pizza logo">
+            <p class="navbar__title">o melhor da <span>cidade</span></p>
+        </div>
+        <ul class="navbar__links">
+            <li><a href="#menu">cardápio</a></li>
+            <li><a href="#drinks">bebidas</a></li>
+            <li><a href="#location">localização</a></li>
+            <li><button class="button button--primary"><a href="https://google.com" target="_blank">peça
+                        agora</a></button></li>
+        </ul>
 
     </nav>
     <section class="hero-header">
@@ -36,7 +51,7 @@
 
     </section>
 
-    <section class="menu">
+    <section class="menu" id="menu">
         <div>
             <h2 class="section__title">Pizzas</h2>
             <p class="section__subtitle">Nossas Pizzas, feitas <span>especialmente</span> para voce!</p>
@@ -101,7 +116,7 @@
                 <p class="card__price"><a href="https://google.com" target="_blank">R$26,00</a></p>
             </div>
         </div>
-        <div>
+        <div id="drinks">
             <h2 class="section__title">Bebidas</h2>
             <p class="section__subtitle">Nossa seleção especial de bebidas para acompanhar nossas Pizzas
             </p>
@@ -155,7 +170,7 @@
             </div>
     </section>
 
-    <section class="location">
+    <section class="location" id="location">
         <div>
             <h2 class="section__title">Localização</h2>
             <p class="section__subtitle">Veja como é fácil vir até a Pizzaria Rosvit</p>
@@ -176,7 +191,8 @@
                 <h2 class="section__title">Peça <span>agora mesmo</span>!</h2>
                 <p class="section__subtitle">entregamos em todo setor</p>
             </div>
-            <button class="button button--primary"><a href="https://google.com">Entrar em contato</a></button>
+            <button class="button button--primary"><a href="https://google.com" target="_blank">Entrar em
+                    contato</a></button>
         </div>
 
     </footer>
